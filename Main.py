@@ -1,10 +1,10 @@
 from typing import List
 
 def merge_sort(data) -> None:
-  if len(myList) > 1:
-        mid = len(myList)/2
-        left = myList[:mid]
-        right = myList[mid:]
+  if len(mylist) > 1:
+        mid = len(mylist)/2
+        left = mylist[:mid]
+        right = mylist[mid:]
 
         merge_sort(left)
         merge_sort(right)
@@ -14,19 +14,19 @@ def merge_sort(data) -> None:
         
         while i < len(left) and j < len(right):
             if left[i] <= right[j]:
-              myList[k] = left[i]
+              mylist[k] = left[i]
               i += 1
             else:
-                myList[k] = right[j]
+                mylist[k] = right[j]
                 j += 1
                 k += 1
         while i < len(left):
-            myList[k] = left[i]
+            mylist[k] = left[i]
             i += 1
             k += 1
 
         while j < len(right):
-            myList[k]=right[j]
+            mylist[k]=right[j]
             j += 1
             k += 1
 
